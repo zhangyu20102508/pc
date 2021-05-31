@@ -1,0 +1,138 @@
+@import "./normalize.less";
+@import './variable.less';
+
+// body颜色
+@bg-body:#f1f1f1;
+@fs:12px;
+@c-fr-color:#33475B;
+// @btnborder: #CBD6E3;
+@mainFontColor: #4F6D95;
+body{
+  background:@bg-body;
+  font-size:@fs;
+  color:@c-fr-color;
+  width: 99vw;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+@-moz-document url-prefix() { /*Firefox*/
+  body{
+    width: 98vw;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.5vw;
+  height: 0.5vw;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-resizer  {
+  background: #f1f1f1;
+}
+
+// 列表里的按钮
+.btn-blue.el-button,.btn-trans.el-button{
+  margin-top: 5px;
+  min-width: 80px;
+}
+.btn-blue.el-button{
+  padding: 6px 11px;
+}
+.btn-trans.el-button{
+  padding: 6px 11px;
+  color: @mainFontColor;
+  border: 1px solid @inputBorderColor;
+  &:hover{
+    background: @activeBlue;
+    color:white;
+  }
+}
+.el-button--text:hover{
+  color: #5488F9;
+  text-decoration: underline;
+}
+
+
+// input公共样式
+.el-select .el-input{
+  .el-input__inner{
+    // height: 34px;
+    &:hover{
+      border: 1px solid @inputBorderColor;
+    }
+    &:focus{
+    }
+  }
+ }
+.el-input,.blog-right-content .el-textarea{
+  .el-input__inner, .el-textarea__inner{
+    border: 1px solid @inputBorderColor;
+    &:hover, &:focus{
+      border: 1px solid #02AAAA;
+    }
+    &:focus{
+    }
+  }
+}
+.blog-right-content .el-textarea{
+  .el-textarea__inner{
+    border: 1px solid @inputBorderColor;
+    &:hover, &:focus{
+      border: 1px solid #02AAAA;
+    }
+    &:focus{
+    }
+  }
+}
+
+// 上传图片默认加载
+.loading-image{
+    position:relative;
+    display:inline-block;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    width: 85px;
+    height: 85px;
+    background:#cbd6e2;
+    vertical-align: top;
+    .img-load{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -19px 0 0 -19px;
+      border-color: #CBD6E2;
+      border-top-color: white;
+      // border: 2px #fff solid;
+    }
+}
+.load-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.el-table{
+  .el-table__header-wrapper, .el-table__fixed-header-wrapper{
+     thead div{
+       color: #33475b;
+     }
+  }
+  .el-table__body-wrapper .el-table__body tr:hover > td{
+    background-color: #F5F8FA;
+  }
+}
+div.el-table{
+ font-size: 13px;
+}

@@ -1,0 +1,89 @@
+/* 浮动 */
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+/*边距*/
+.mt15 {
+  margin-top: 15px !important;
+}
+.mr15 {
+  margin-right: 15px !important;
+}
+.mb15 {
+  margin-bottom: 15px !important;
+}
+.ml15 {
+  margin-left: 15px !important;
+}
+.ml20 {
+  margin-left: 20px !important;
+}
+.mr20 {
+  margin-right: 20px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+/*补白*/
+.padlr20 {
+  padding: 0 20px !important;
+}
+.padr20 {
+  padding-right: 20px !important;
+}
+.padl20 {
+  padding-left: 20px !important;
+}
+.padr90 {
+  padding-right: 90px !important;
+}
+.posr {
+  position: relative !important;
+}
+
+/*左侧菜单*/
+.sideNav{
+    background-color: #32323A;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top:0;
+    width:220px;
+    z-index:1000;
+    overflow:hidden;
+}
+
+
+/*内容*/
+.content {
+  position: relative;
+  padding-left:220px;
+  transition: padding 1s ease;
+  top:0px;
+  background:#f3f3f3;
+  &.content-big {
+    padding-left: 0;
+  }
+}
+.main {
+  padding: 0 60px;
+  position: relative;
+  min-width: 960px;
+}
+
+@media (max-width: 1280px) {
+  .main {
+    padding: 0 20px;
+  }
+}
+
+.page-content {
+  margin: 20px 0;
+}
